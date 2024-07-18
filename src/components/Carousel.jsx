@@ -1,5 +1,7 @@
 import React from "react";
 
+import "bootstrap-dark-5/dist/css/bootstrap-dark.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 const Carousel = () => {
   return (
     <div
@@ -10,22 +12,25 @@ const Carousel = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src="https://images.unsplash.com/photo-1721137287642-43b251bd6f00?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            className="d-block w-100"
+            src="https://t.ly/oEI4Q"
+            style={{ filter: "brightness(30%)" }}
+            className="d-block w-100 h-70 "
             alt="..."
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://source.unsplash.com/random/900×700/?fruit"
-            className="d-block w-100"
+            src="https://t.ly/KnMmV"
+            style={{ filter: "brightness(30%)" }}
+            className="d-block w-100 h-70"
             alt="..."
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://source.unsplash.com/random/900×700/?fruit"
-            className="d-block w-100"
+            src="https://t.ly/KQn6U"
+            style={{ filter: "brightness(30%)" }}
+            className="d-block w-100 h-70"
             alt="..."
           />
         </div>
