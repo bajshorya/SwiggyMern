@@ -5,10 +5,7 @@ const mongoURI =
 
 const mongoDB = async () => {
   try {
-    await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(mongoURI, {});
     console.log("Connected to MongoDB");
 
     // Fetch and log the data from the "food_items" collection
