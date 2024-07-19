@@ -96,7 +96,7 @@ const Signup = () => {
             <button type="submit" className=" m-3 btn btn-primary">
               Submit
             </button>
-            <Link to="./login" className="m-3 btn btn-danger">
+            <Link to="/login" className="m-3 btn btn-danger">
               {" "}
               Already a user !
             </Link>
