@@ -51,7 +51,11 @@ router.post(
       if (!userData) {
         return res.status(400).json({ errors: " Email doesn't exists !!! " });
       }
-      if (req.body.password !== userData.password) {
+      const pwdCompare = await bcrypt.compare(
+        req.body.password,
+        userData.password
+      );
+      if (!pwdCompare) {
         return res
           .status(400)
           .json({ errors: " Incorrect Password or Email !!! " });
