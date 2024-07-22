@@ -16,6 +16,8 @@ const mongoDB = async () => {
       .collection("foodCategory")
       .find({})
       .toArray();
+    // console.log("Fetched food items:", fetchedData); // Add this line
+    // console.log("Fetched food categories:", foodCategory); // Add this line
 
     global.food_items = fetchedData;
     global.foodCategory = foodCategory;
